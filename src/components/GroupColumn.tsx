@@ -30,6 +30,7 @@ export default function GroupColumn({ group }: { group: Group & { links: LinkIte
             <div className="link-body">
               {link.name && <span className="link-name">{link.name}</span>}
               <span className="link-url">{link.url}</span>
+              <span className="link-response-time">{link.lastResponseTimeMs} ms</span>
             </div>
             <div className="link-actions">
               <a
